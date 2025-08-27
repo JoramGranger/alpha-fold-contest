@@ -10,9 +10,9 @@ const Hero: React.FC<HeroProps> = ({ onRegisterClick }) => {
   const [currentSentence, setCurrentSentence] = useState(0);
 
   const backgroundImages = [
-    '/images/bg-blue01.jpg',
-    '/images/bg--02.jpg',
-    '/images/bg-rgb01.jpg'
+    '/images/bg-blue04.jpg',
+    '/images/bg--01.jpg',
+    '/images/bg-rgb02.jpg'
   ];
 
   const sentences = [
