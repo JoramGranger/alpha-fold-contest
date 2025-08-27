@@ -64,7 +64,7 @@ const Registration: React.FC = () => {
               </div>
 
               {/* Registration Steps */}
-              <div>
+             {/*  <div>
                 <h3 className="text-2xl font-light text-black mb-6">How to Register</h3>
                 <div className="space-y-6">
                   {steps.map((step, index) => (
@@ -79,7 +79,7 @@ const Registration: React.FC = () => {
                     </div>
                   ))}
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Right Side - Registration Card */}

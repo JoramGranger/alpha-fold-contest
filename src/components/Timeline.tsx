@@ -43,7 +43,7 @@ const Timeline: React.FC = () => {
   return (
     <section id="timeline" className="py-20 bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden">
       {/* Background Image with subtle animation */}
-      <div className="absolute inset-0 bg-[url('/images/bg-rgb04.jpg')] bg-cover bg-center opacity-30 animate-pulse"></div>
+      <div className="absolute inset-0 bg-[url('/images/bg-rgb04.webp')] bg-cover bg-center opacity-30 animate-pulse"></div>
       <div className="absolute inset-0 bg-black/40"></div>
       
       {/* Animated Background Elements */}

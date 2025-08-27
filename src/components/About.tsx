@@ -66,7 +66,7 @@ const About: React.FC = () => {
             <div>
               <h3 className="text-xl font-medium text-black mb-4">Contest Structure</h3>
               <p className="text-gray-600 font-light mb-4">
-                6 teams of 4 participants each. International participants from Kenya, Rwanda, and Tanzania 
+               International participants from Kenya, Rwanda, and Tanzania
                 join local researchers with access to AlphaFold tools and HPC resources.
               </p>
               <p className="text-gray-600 font-light mb-4">
@@ -77,7 +77,7 @@ const About: React.FC = () => {
             <div className="bg-white/70 backdrop-blur-md border border-red-200/50 p-6 rounded-2xl shadow-lg">
               <h4 className="font-medium text-red-800 mb-2">Expected Outcomes</h4>
               <p className="text-red-700 text-sm font-light">
-                Hands-on AlphaFold experience with research reports and presentations.
+                Prizes for top 3 teams.
               </p>
             </div>
           </div>
