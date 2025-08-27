@@ -1,32 +1,47 @@
 import React from 'react';
-import { Dna, Microscope, Leaf, Shield } from 'lucide-react';
+import { Dna, Microscope, Leaf, Shield, Heart, Globe, Apple } from 'lucide-react';
 
 const About: React.FC = () => {
   const features = [
-    {
-      icon: Shield,
-      title: "Antimicrobial Resistance",
-      description: "Apply AlphaFold to understand and combat drug-resistant pathogens."
-    },
-    {
-      icon: Microscope,
-      title: "Human & Animal Health",
-      description: "Explore protein structures to advance medical and veterinary research."
-    },
-    {
-      icon: Leaf,
-      title: "Agriculture & Environment",
-      description: "Investigate crop science, food security, and environmental health applications."
-    },
-    {
-      icon: Dna,
-      title: "Synthetic Biology",
-      description: "Design novel proteins and biological systems for innovative solutions."
-    }
-  ];
+  {
+    icon: Shield,
+    title: "Antimicrobial Resistance",
+    description: "Apply AlphaFold to understand and combat drug-resistant pathogens."
+  },
+  {
+    icon: Heart,
+    title: "Human Health",
+    description: "Explore protein structures to advance medical research and therapeutics."
+  },
+  {
+    icon: Microscope,
+    title: "Animal Health",
+    description: "Investigate protein functions for veterinary medicine and animal welfare."
+  },
+  {
+    icon: Leaf,
+    title: "Crop Science",
+    description: "Develop sustainable agricultural solutions through protein engineering."
+  },
+  {
+    icon: Globe,
+    title: "Environmental Health",
+    description: "Address environmental challenges using structural biology insights."
+  },
+  {
+    icon: Apple,
+    title: "Food Science",
+    description: "Enhance food safety, nutrition, and processing through protein analysis."
+  },
+  {
+    icon: Dna,
+    title: "Synthetic Biology",
+    description: "Design novel proteins and biological systems for innovative solutions."
+  }
+];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+    <section id="about" className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-r from-red-50/30 to-transparent"></div>
       

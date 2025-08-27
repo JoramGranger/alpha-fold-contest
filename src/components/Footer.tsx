@@ -5,7 +5,10 @@ const Footer: React.FC = () => {
   const quickLinks = [
     { name: 'About', href: '#about' },
     { name: 'Schedule', href: '#timeline' },
-    { name: 'Registration', href: '#registration' },
+    { 
+      name: 'Registration', 
+      href: 'https://docs.google.com/forms/d/e/1FAIpQLSekxMwRzRrVF63ixrmovPY5f-wa0A7MUj9U6boDbZ_3Ma3FoQ/viewform' 
+    },
     { name: 'Partners', href: '#partners' },
   ];
 
@@ -13,7 +16,7 @@ const Footer: React.FC = () => {
     { name: 'Contest Guidelines', href: '#' },
     { name: 'FAQ', href: '#' },
     { name: 'AlphaFold Resources', href: '#' },
-    { name: 'Travel & Accommodation', href: '#' },
+    { name: 'Travel & Accommodation', href: 'https://fairwayhotel.co.ug/' },
   ];
 
   const socialLinks = [
@@ -25,11 +28,15 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="bg-gradient-to-br from-black via-gray-900 to-black text-white relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 bg-[url('/images/bg-rgb01.jpg')] bg-cover bg-center opacity-20"></div>
+      <div className="absolute inset-0 bg-black/70"></div>
+      
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-r from-red-900/10 to-transparent"></div>
       
       {/* Main Footer Content */}
-      <div className="container mx-auto px-6 py-16">
+      <div className="container mx-auto px-6 py-16 relative z-10">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
           {/* Brand Section */}
           <div className="lg:col-span-1 space-y-6">
@@ -73,9 +80,14 @@ const Footer: React.FC = () => {
                 <li key={index}>
                   <a 
                     href={link.href}
+                    target={link.href.startsWith('http') ? '_blank' : undefined}
+                    rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                     className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center group"
                   >
                     {link.name}
+                    {link.href.startsWith('http') && (
+                      <ExternalLink className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    )}
                   </a>
                 </li>
               ))}
@@ -90,36 +102,24 @@ const Footer: React.FC = () => {
                 <li key={index}>
                   <a 
                     href={resource.href}
+                    target={resource.href.startsWith('http') ? '_blank' : undefined}
+                    rel={resource.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                     className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center group"
                   >
                     {resource.name}
+                    {resource.href.startsWith('http') && (
+                      <ExternalLink className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    )}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Newsletter & Social */}
+          {/* Social */}
           <div>
             <h4 className="text-lg font-light text-white mb-6 animate-fade-in delay-600">Stay Connected</h4>
             
-            {/* Newsletter Signup */}
-            <div className="mb-8">
-              <p className="text-gray-400 mb-4 font-light">
-                Stay updated on contest details.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-2">
-                <input
-                  type="email"
-                  placeholder="Your email address"
-                  className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg px-4 py-2 text-white placeholder-gray-400 flex-1 focus:outline-none focus:border-red-500"
-                />
-                <button className="bg-red-600/90 backdrop-blur-md hover:bg-red-600 text-white font-light py-2 px-4 rounded-lg transition-all duration-300 hover:scale-105 border border-red-500/30">
-                  Subscribe
-                </button>
-              </div>
-            </div>
-
             {/* Social Links */}
             <div>
               <p className="text-gray-400 mb-4 font-light">Follow us:</p>
@@ -141,19 +141,16 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Bottom Footer */}
-      <div className="border-t border-white/10 backdrop-blur-sm">
+      <div className="border-t border-white/10 backdrop-blur-sm relative z-10">
         <div className="container mx-auto px-6 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
               © 2025 AlphaFold Contest Uganda. All rights reserved.
             </div>
             
-            <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Terms of Service
+            <div className="text-gray-400 text-sm">
+              <a href="#" className="hover:text-white transition-colors">
+                ACE Uganda
               </a>
             </div>
           </div>

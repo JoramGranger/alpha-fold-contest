@@ -101,26 +101,31 @@ const Registration: React.FC = () => {
                   <span className="text-green-800 font-light">Registration Now Open</span>
                 </div>
                 <p className="text-green-700 text-sm mt-2 font-light">
-                  Limited to 24 participants. Apply early to secure your place.
+                  Apply early to secure your place.
                 </p>
               </div>
 
               {/* Action Buttons */}
               <div className="space-y-4">
-                <button className="w-full bg-red-600/90 backdrop-blur-md hover:bg-red-600 text-white font-medium py-4 px-6 rounded-full transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 flex items-center justify-center space-x-2 border border-red-500/30 shadow-lg">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSekxMwRzRrVF63ixrmovPY5f-wa0A7MUj9U6boDbZ_3Ma3FoQ/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-red-600/90 backdrop-blur-md hover:bg-red-600 text-white font-medium py-4 px-6 rounded-full transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 flex items-center justify-center space-x-2 border border-red-500/30 shadow-lg"
+                >
                   <span>Register Now</span>
                   <ExternalLink className="w-5 h-5" />
-                </button>
+                </a>
               </div>
 
-              <div className="mt-6 text-center">
+              {/* <div className="mt-6 text-center">
                 <p className="text-gray-500 text-sm font-light">
                   Questions? Contact us at{' '}
                   <a href="mailto:alphafold@aceuganda.org" className="text-red-600 hover:underline">
                     alphafold@aceuganda.org
                   </a>
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

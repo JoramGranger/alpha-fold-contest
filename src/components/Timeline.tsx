@@ -11,6 +11,13 @@ const Timeline: React.FC = () => {
       status: "active"
     },
     {
+      date: "October 13, 2025",
+      title: "Day 1: Pre Hackathon Day",
+      description: "Welcome and reception, Orientation session",
+      icon: Calendar,
+      status: "upcoming"
+    },
+    {
       date: "October 14, 2025",
       title: "Day 1: Opening",
       description: "Opening ceremony, keynote, challenge announcement.",
@@ -34,11 +41,26 @@ const Timeline: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-r from-red-900/10 to-transparent"></div>
+    <section id="timeline" className="py-20 bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden">
+      {/* Background Image with subtle animation */}
+      <div className="absolute inset-0 bg-[url('/images/bg-rgb01.jpg')] bg-cover bg-center opacity-30 animate-pulse"></div>
+      <div className="absolute inset-0 bg-black/40"></div>
       
-      <div className="container mx-auto px-6">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 bg-gradient-to-r from-red-900/10 to-transparent animate-pulse"></div>
+      
+      {/* Floating Particles */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-red-500/20 rounded-full animate-ping"></div>
+        <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-white/30 rounded-full animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-3/4 w-1.5 h-1.5 bg-red-400/30 rounded-full animate-bounce delay-500"></div>
+        <div className="absolute bottom-1/4 left-1/2 w-1 h-1 bg-white/20 rounded-full animate-ping delay-2000"></div>
+      </div>
+      
+      {/* Moving Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-red-900/5 to-transparent animate-pulse delay-700"></div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white text-sm font-medium mb-6 shadow-lg animate-fade-in">
@@ -79,8 +101,6 @@ const Timeline: React.FC = () => {
                         </div>
                         <div className="text-red-300 text-sm font-medium">{event.date}</div>
                       </div>
-                      
-                      <h3 className="text-xl font-bold text-white mb-3">{event.title}</h3>
                       <h3 className="text-xl font-medium text-white mb-3">{event.title}</h3>
                       <p className="text-gray-300 font-light">{event.description}</p>
                       
@@ -108,9 +128,14 @@ const Timeline: React.FC = () => {
             <p className="text-gray-300 mb-6 font-light">
               Join researchers from across East Africa.
             </p>
-            <button className="bg-red-600/90 backdrop-blur-md hover:bg-red-600 text-white font-medium py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 border border-red-500/30 shadow-lg">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSekxMwRzRrVF63ixrmovPY5f-wa0A7MUj9U6boDbZ_3Ma3FoQ/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-red-600/90 backdrop-blur-md hover:bg-red-600 text-white font-medium py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 border border-red-500/30 shadow-lg inline-block"
+            >
               Register Now
-            </button>
+            </a>
           </div>
         </div>
       </div>
