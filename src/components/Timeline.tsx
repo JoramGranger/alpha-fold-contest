@@ -6,7 +6,7 @@ const Timeline: React.FC = () => {
     {
       date: "Registration Open",
       title: "Registration",
-      description: "Applications open. Limited to 24 participants.",
+      description: "Applications open until 12th September.",
       icon: Users,
       status: "active"
     },
