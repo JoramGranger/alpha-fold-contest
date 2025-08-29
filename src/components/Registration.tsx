@@ -6,7 +6,7 @@ const Registration: React.FC = () => {
     "Researchers, students, or professionals in relevant fields",
     "Interest in protein structure prediction and applications",
     "Teams of 4 participants (individuals will be matched)",
-    "Available for all 4 days of the contest"
+    "4-day availability from October 13-17, 2025",
   ];
 
   const steps = [

@@ -35,7 +35,9 @@ const Partners: React.FC = () => {
             Leading Institutions
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto font-light animate-fade-in-up delay-300">
-            Premier research institutions and technology partners advancing computational biology in East Africa.
+            The AlphaFold Contest Uganda 2025 is organized by the 
+            African Center of Excellence in Bioinformatics & Data-intensive Sciences(ACE-Uganda) under 
+            the Infectious Diseases Institute (IDI), Makerere University, in collaboration with Google DeepMind.
           </p>
         </div>
 

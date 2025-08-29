@@ -12,15 +12,15 @@ const Timeline: React.FC = () => {
     },
     {
       date: "October 13, 2025",
-      title: "Day 1: Pre Hackathon Day",
-      description: "Welcome and reception, Orientation session",
+      title: "Pre Hackathon Day",
+      description: "Orientation and Pre Hackathon Resources",
       icon: Calendar,
       status: "upcoming"
     },
     {
       date: "October 14, 2025",
       title: "Day 1: Opening",
-      description: "Opening ceremony, keynote, challenge announcement.",
+      description: "Welcome, Pitching, Team Formation and Challenge Announcement.",
       icon: Calendar,
       status: "upcoming"
     },
