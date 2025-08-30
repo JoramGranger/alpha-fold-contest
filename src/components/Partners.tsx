@@ -44,9 +44,12 @@ const Partners: React.FC = () => {
         {/* Partners Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-16 max-w-5xl mx-auto animate-fade-in-up delay-500">
           {partners.map((partner, index) => (
-            <div 
+            <a
               key={index}
-              className="group bg-white/60 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 hover:-translate-y-2 border border-white/50 hover:bg-white/80 overflow-hidden"
+              href={partner.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white/60 backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 hover:-translate-y-2 border border-white/50 hover:bg-white/80 overflow-hidden cursor-pointer block"
             >
               {/* Logo Container - Upper 50% */}
               <div className="h-40 bg-white/70 backdrop-blur-sm flex items-center justify-center p-6 group-hover:bg-white transition-colors duration-300">
@@ -75,9 +78,15 @@ const Partners: React.FC = () => {
               {/* Content - Lower 50% */}
               <div className="p-6 text-center">
                 {/* Partner Name */}
-                <h3 className="text-lg font-medium text-black">{partner.name}</h3>
+                <h3 className="text-lg font-medium text-black group-hover:text-red-600 transition-colors duration-300">{partner.name}</h3>
+                
+                {/* Visit Website Indicator */}
+                <div className="flex items-center justify-center mt-2 text-gray-500 group-hover:text-red-500 transition-colors duration-300">
+                  <Globe size={16} className="mr-1" />
+                  <span className="text-sm">Visit Website</span>
+                </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 
