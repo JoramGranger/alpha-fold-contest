@@ -6,17 +6,17 @@ const Partners: React.FC = () => {
     {
       name: "Makerere University | IDI",
       logoImage: "/images/IDI_Logo.png",
-      website: "#"
-    },
-    {
-      name: "Google DeepMind",
-      logoImage: "/images/Google_DeepMind_Lockup.png",
-      website: "#"
+      website: "https://idi.mak.ac.ug/"
     },
     {
       name: "ACE Uganda",
       logoImage: "/images/aceLogo-updated_red.png",
-      website: "#"
+      website: "https://ace.ac.ug/"
+    },
+    {
+      name: "Google DeepMind",
+      logoImage: "/images/Google_DeepMind_Lockup.png",
+      website: "https://deepmind.google/science/alphafold/"
     }
   ];
 

@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-red-900/10 to-transparent"></div>
       
       {/* Main Footer Content */}
-      <div className="container mx-auto px-6 py-16 relative z-10">
+      <div className="container text-sm mx-auto px-6 py-16 relative z-10">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
           {/* Brand Section */}
           <div className="lg:col-span-1 space-y-6">
@@ -44,13 +44,13 @@ const Footer: React.FC = () => {
               <h3 className="text-2xl font-light text-white mb-2 animate-fade-in">AlphaFold Contest</h3>
               <p className="text-red-400 font-light">Uganda 2025</p>
             </div>
-            <p className="text-gray-400 font-light animate-fade-in-up delay-200">
-              4-day research challenge applying AlphaFold to real-world problems.
+            <p className="text-gray-400 text-sm font-light animate-fade-in-up delay-200">
+              4-day challenge applying AlphaFold to real-world problems.
             </p>
             
             {/* Contact Info */}
             <div className="space-y-3 animate-fade-in-up delay-300">
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center text-sm space-x-3">
                 <Mail className="w-5 h-5 text-red-500 flex-shrink-0" />
                 <a href="mailto:alphafoldtraininguganda2025@gmail.com" className="text-gray-300 hover:text-white transition-colors">
                   alphafoldtraininguganda2025@gmail.com
@@ -58,8 +58,8 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-red-500 flex-shrink-0" />
-                <a href="tel:+256-xxx-xxx-xxx" className="text-gray-300 hover:text-white transition-colors">
-                  +256 XXX XXX XXX
+                <a href="tel:+256312211444" className="text-gray-300 hover:text-white transition-colors">
+                  +256 312 211 444
                 </a>
               </div>
               <div className="flex items-start space-x-3">
